@@ -4,7 +4,7 @@ import './App.css';
 
 function MainNavigation() {
   return (
-    <header>
+    <header className='header'>
       <nav>
         <ul>
           <li>

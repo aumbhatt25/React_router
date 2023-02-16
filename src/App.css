@@ -10,10 +10,12 @@
   color: white;
 }
 
-header {
+.header {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  position: fixed;
+  top:0;
 }
 
 ul{
