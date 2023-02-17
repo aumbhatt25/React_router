@@ -4,6 +4,7 @@ import ErrorPage from './Error';
 import HomePage from './Home';
 import ProductsPage from './Products';
 import RootLayout from './Root';
+import ProductDetail from './ProductDetail';
 
 import './App.css';
 
@@ -13,8 +14,9 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage /> },
+      { path: '/', element: <HomePage /> }, // index: true
       { path: '/products', element: <ProductsPage /> },
+      { path: '/products/:productId', element: <ProductDetail />}
     ],
   }
 ]);
